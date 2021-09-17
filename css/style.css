@@ -549,7 +549,7 @@ template {
   }
 }
 
-@media (max-width: 576) {
+@media (max-width: 576px) {
   .logo {
     width: 99px;
   }
