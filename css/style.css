@@ -515,7 +515,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    min-width: 576px;
+    max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
