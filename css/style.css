@@ -508,9 +508,12 @@ template {
   .search__input {
     width: 340px;
   }
+  .search__button {
+    right: 13px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     min-width: 576px;
     width: 92%;
