@@ -391,6 +391,12 @@ template {
   background-color: #0A223D;
 }
 
+.navbar-bottom__item {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .navbar-menu {
   list-style-type: none;
   margin: 0;
@@ -518,6 +524,9 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .navbar-menu {
+    padding: 22px 10px;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -555,6 +564,13 @@ template {
   }
   .container {
     max-width: 479px;
+    width: 92%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: 320px;
     width: 92%;
   }
 }
