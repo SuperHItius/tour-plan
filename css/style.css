@@ -571,7 +571,7 @@ template {
 }
 
 .stars__star {
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 .offer {
@@ -600,11 +600,13 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .rating__counter-max {
   font-size: 10px;
   line-height: 13px;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
