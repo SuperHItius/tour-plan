@@ -1,15 +1,15 @@
 
-new Swiper('.swiper', {
+new Swiper('.hotel-slider', {
     loop: true,
     navigation: {
-        nextEl: '.slider-button--next',
-        prevEl: '.slider-button--prev',
+        nextEl: '.hotel-slider__button--next',
+        prevEl: '.hotel-slider__button--prev',
     },
     speed: 1100,
     effect: 'coverflow',
 });
 
-const swiper = document.querySelector('.swiper').swiper;
+const swiper = document.querySelector('.hotel-slider').swiper;
 
 addEventListener("keydown", function(event) {
     if (event.code === 'ArrowRight') {
@@ -19,4 +19,12 @@ addEventListener("keydown", function(event) {
     if (event.code === 'ArrowLeft') {
         swiper.slidePrev();
     }
+});
+
+new reviewsSlider('.reviews-slider', {
+    loop: true,
+    navigation: {
+        nextEl: '.reviews-slider__button--next',
+        prevEl: '.reviews-slider__button--prev',
+    },
 });
