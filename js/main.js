@@ -21,7 +21,7 @@ addEventListener("keydown", function(event) {
     }
 });
 
-new reviewsSlider('.reviews-slider', {
+new Swiper('.reviews-slider', {
     loop: true,
     navigation: {
         nextEl: '.reviews-slider__button--next',

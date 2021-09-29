@@ -101,7 +101,7 @@
     .hotel
         &-right
             flex-direction: column
-            min-height: 450px
+            height: 450px
         &-slider
             height: 350px
     .booking
@@ -144,10 +144,14 @@
         height: 250px
     
     .hotel
+        &-right
+            height: 100%
         &__slider
             margin-bottom: 20px
         &-slider
             height: 250px
+    .booking
+        margin-bottom: 20px
     .newsletter
         padding: 76px 0 83px 0
         &__title
@@ -167,10 +171,25 @@
             padding-bottom: 28px
     .hotel
         padding-top: 0
-        padding-bottom: 50px
+        padding-bottom: 40px
+        &-description
+            padding-bottom: 20px
         &-info
             &__offer
                 margin-top: 2px
+        &-slider
+            height: 179px
+            &__button
+                &--prev
+                    background-image: url(../image/arrow-prev-small.svg)
+                &--next
+                    background-image: url(../image/arrow-next-small.svg)
+    .booking
+        height: 211px
+        margin-bottom: 20px
+    .map
+        height: 173px
+        margin-top: 0
     .stars
         margin-right: 17px
         margin-bottom: 4px
@@ -178,4 +197,21 @@
             margin-left: 0
             width: 6px
             height: 6px
+    .newsletter
+        &-title
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            margin-top: 0
+            margin-bottom: 5px
+            &__strong
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+                margin-bottom: 37px
+    
+
+
 
