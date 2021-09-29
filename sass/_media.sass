@@ -9,6 +9,8 @@
                 height: 100%
                 width: 100%
                 object-fit: cover
+    .card
+        width: 230px
 
 @media (max-width: 992px)
     .container
@@ -73,12 +75,17 @@
                 &--next
                     top: 51%
                     right: 5px
-
-
     .stars
         &__star
             width: 10px
             height: 8px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 340px
 
 
 @media (max-width: 767px)
@@ -156,6 +163,11 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0)
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+    .card
+        width: 49%
 
 
 @media (max-width: 576px)
@@ -184,6 +196,8 @@
             margin-bottom: 37px
     .subscribe
         width: 97%
+    .card
+        width: 100%
 
 @media (max-width: 360px)
     .container
