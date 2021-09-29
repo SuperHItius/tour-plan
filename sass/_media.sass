@@ -13,6 +13,8 @@
 @media (max-width: 992px)
     .container
         max-width: 700px
+    .newsletter
+        padding: 72px 0 73px 0
     .newsletter-wrapper
         max-width: 700px
     .logo
@@ -33,6 +35,7 @@
         &__input
             width: 340px
     .hotel
+        padding-bottom: 56px
         &-grid
             flex-direction: column
         &__slider
@@ -50,9 +53,32 @@
         width: 340px
     
     .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px        
+            text-align: center
+            text-transform: uppercase
         &-slider
             &__item
                 max-width: 580px
+                margin-top: 49px
+            &__username
+                margin-top: 16px
+            &__button
+                &--prev
+                    left: 0
+                    top: 51%
+                &--next
+                    top: 51%
+                    right: 5px
+
+
+    .stars
+        &__star
+            width: 10px
+            height: 8px
 
 
 @media (max-width: 767px)
@@ -157,7 +183,7 @@
         &__title
             margin-bottom: 37px
     .subscribe
-        width: 100%
+        width: 97%
 
 @media (max-width: 360px)
     .container
@@ -195,8 +221,8 @@
         margin-bottom: 4px
         &__star
             margin-left: 0
-            width: 6px
-            height: 6px
+            width: 10px
+            height: 7px
     .newsletter
         &-title
             font-style: normal
@@ -211,6 +237,26 @@
                 font-size: 30px
                 line-height: 38px
                 margin-bottom: 37px
+    .reviews
+        &__title
+            margin: 27px auto 42px
+            max-width: 245px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+        &-slider
+            &__profile
+                margin-top: -48px
+            &__username
+                margin-top: 9px
+            &__button
+                &--prev
+                    margin-left: -91px
+                &--next
+                    margin-right: -87px
     
 
 
