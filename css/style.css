@@ -1615,6 +1615,9 @@ template {
   .reviews-slider__button--next {
     margin-right: -87px;
   }
+  .activities {
+    padding-top: 15px;
+  }
   .activities__title {
     margin-top: 17px;
     font-style: normal;
@@ -1622,8 +1625,10 @@ template {
     font-size: 18px;
     line-height: 23px;
     text-transform: uppercase;
+    margin-bottom: 37px;
   }
   .activities__card--2 {
+    padding: 27px 9px 17px 26px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -1632,6 +1637,9 @@ template {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .activities__card--4 {
+    padding: 27px 9px 17px 26px;
   }
   .card {
     margin-bottom: 20px;
