@@ -1098,7 +1098,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 40px 0 98px 0;
 }
 
 .activities__title {
@@ -1545,6 +1545,17 @@ template {
   }
   .reviews-slider__button--next {
     margin-right: -87px;
+  }
+  .activities__title {
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+  .card {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
