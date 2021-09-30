@@ -1,16 +1,18 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
-    .swiper
-        width: 590px
+    // .swiper
+    //     width: 590px
     .hotel
         &-slider
+            width: 590px
             &__image
                 height: 100%
                 width: 100%
                 object-fit: cover
     .card
         width: 230px
+        padding-right: 4px
 
 @media (max-width: 992px)
     .container
@@ -84,8 +86,11 @@
             flex-wrap: wrap
         &__card
             margin-bottom: 20px
+            
     .card
         width: 340px
+        &__title
+                width: 200px
 
 
 @media (max-width: 767px)
@@ -196,8 +201,19 @@
             margin-bottom: 37px
     .subscribe
         width: 97%
+    .activities
+        &__card
+            &--2
+                order: 3
+            &--3
+                order: 2
     .card
         width: 100%
+        margin-bottom: 20px
+    .reviews    
+        &-slider
+            &__text
+                text-align: left
 
 @media (max-width: 360px)
     .container
@@ -264,6 +280,10 @@
             text-align: center
             text-transform: uppercase
         &-slider
+            &__block-text
+                height: 260px
+            &__text
+                text-align: left
             &__profile
                 margin-top: -48px
             &__username
@@ -273,6 +293,7 @@
                     margin-left: -91px
                 &--next
                     margin-right: -87px
+                
     .activities
         &__title
             margin-top: 17px
@@ -281,6 +302,11 @@
             font-size: 18px
             line-height: 23px
             text-transform: uppercase
+        &__card
+            &--2
+                order: 3
+            &--3
+                order: 2
     .card
         margin-bottom: 20px
         
