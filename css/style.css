@@ -1189,7 +1189,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .swiper {
     width: 590px;
   }
   .hotel-slider__image {
@@ -1488,9 +1488,11 @@ template {
   }
   .hotel-slider__button--prev {
     background-image: url(../image/arrow-prev-small.svg);
+    left: -3px;
   }
   .hotel-slider__button--next {
     background-image: url(../image/arrow-next-small.svg);
+    right: -3px;
   }
   .booking {
     height: 211px;
