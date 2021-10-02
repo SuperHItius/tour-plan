@@ -43,7 +43,7 @@
         &-grid
             flex-direction: column
         &__slider
-            margin-bottom: 30px
+            margin-bottom: 32px
         &-right
             flex-direction: row
         &-slider
@@ -52,11 +52,17 @@
     .booking
         margin-top: 0
         width: 340px
+        padding: 25px 23px
+        &__pricetag
+            line-height: 28px
+        &__call-center
+            margin-bottom: 19px
     
     .map
         width: 340px
     
     .reviews
+        padding-top: 17px
         &__title
             font-style: normal
             font-weight: bold
@@ -64,24 +70,30 @@
             line-height: 38px        
             text-align: center
             text-transform: uppercase
+            margin-bottom: 46px
         &-slider
             &__item
                 max-width: 580px
                 margin-top: 49px
             &__username
-                margin-top: 16px
+                margin-top: 9px
             &__button
                 &--prev
                     left: 0
-                    top: 51%
+                    top: 49%
                 &--next
-                    top: 51%
-                    right: 5px
+                    top: 49%
+                    right: 0
+            &__date
+                margin-bottom: 4px
+            &__block-text
+                height: 156px
     .stars
         &__star
             width: 10px
             height: 8px
     .activities
+        padding-top: 19px
         &-wrapper
             flex-wrap: wrap
         &__card
@@ -89,8 +101,9 @@
             
     .card
         width: 340px
+        margin-bottom: 20px
         &__title
-                width: 200px
+            width: 200px
 
 
 @media (max-width: 767px)
@@ -235,6 +248,7 @@
                 margin-top: 2px
         &-slider
             height: 179px
+            margin-bottom: 18px
             &__button
                 &--prev
                     background-image: url(../image/arrow-prev-small.svg)
@@ -246,11 +260,11 @@
         height: 211px
         margin-bottom: 20px
         &__price
-            margin-top: 0
-        &__room
-            margin-top: 6px
+            margin-top: 5px
+        &__per-room
+            margin-bottom: 3px
         &__call-center
-            margin-bottom: 14px
+            margin-bottom: 17px
     .map
         height: 173px
         margin-top: 0
@@ -258,24 +272,29 @@
         margin-right: 17px
         margin-bottom: 4px
         &__star
-            margin-left: 0
+            margin-left: -5px
             width: 10px
             height: 7px
     .newsletter
+        &-wrapper
+            width: 88%
         &-title
             font-style: normal
             font-weight: 300
             font-size: 20px
-            line-height: 25px
+            line-height: 22px
             margin-top: 0
             margin-bottom: 3px
             &__strong
                 font-style: normal
                 font-weight: 600
                 font-size: 30px
-                line-height: 38px
-                margin-bottom: 37px
+                line-height: 52px
+                margin-bottom: 28px
+    .subscribe
+        width: 100%
     .reviews
+        padding-top: 13px
         &__title
             margin: 27px auto 42px
             max-width: 245px
@@ -287,22 +306,23 @@
             text-transform: uppercase
         &-slider
             &__block-text
-                height: 260px
+                height: 295px
             &__text
+                max-width: 218px
                 text-align: left
             &__profile
                 margin-top: -48px
-                margin-bottom: 16px
+                margin-bottom: 19px
             &__username
-                margin-top: 9px
+                margin-top: 8px
+            &__data
             &__button
                 &--prev
                     margin-left: -91px
                 &--next
                     margin-right: -87px
-                
     .activities
-        padding-top: 15px
+        padding-top: 0
         &__title
             margin-top: 17px
             font-style: normal
@@ -311,18 +331,17 @@
             line-height: 23px
             text-transform: uppercase
             margin-bottom: 37px
-        &__card
-            &--2
-                padding: 27px 9px 17px 26px
-                order: 3
-            &--3
-                order: 2
-            &--4
-                padding: 27px 9px 17px 26px
     .card
         margin-bottom: 20px
-        
-    
+        &--2
+            padding: 27px 9px 25px 27px
+            order: 3
+        &--3
+            order: 2
+            margin-bottom: 28px
+        &--4
+            padding: 27px 9px 25px 26px
+
 
 
 
