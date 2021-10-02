@@ -532,7 +532,7 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 0px;
+  margin-top: 4px;
 }
 
 .hotel-info__name {
@@ -673,6 +673,7 @@ template {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  margin-top: 11px;
 }
 
 .rating__text {
@@ -698,7 +699,7 @@ template {
   border-radius: 8px;
   width: 350px;
   max-height: 210px;
-  padding: 28px;
+  padding: 25px;
   margin-top: 19px;
 }
 
@@ -709,7 +710,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .booking__price {
@@ -720,6 +721,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 6px;
 }
 
 .booking__start {
@@ -746,7 +748,7 @@ template {
 }
 
 .booking__room {
-  margin-top: 4px;
+  margin-top: 9px;
 }
 
 .booking__text {
@@ -966,7 +968,11 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.reviews-slider__profile__star {
+  margin-right: 10px;
 }
 
 .reviews-slider__avatar {
@@ -1001,11 +1007,14 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reviews-slider__block-text {
   overflow: auto;
-  height: 150px;
+  height: 112px;
 }
 
 .reviews-slider__block-text::-webkit-scrollbar {
@@ -1020,6 +1029,7 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  text-align: center;
 }
 
 .newsletter {
@@ -1559,6 +1569,15 @@ template {
     height: 211px;
     margin-bottom: 20px;
   }
+  .booking__price {
+    margin-top: 0;
+  }
+  .booking__room {
+    margin-top: 6px;
+  }
+  .booking__call-center {
+    margin-bottom: 14px;
+  }
   .map {
     height: 173px;
     margin-top: 0;
@@ -1578,7 +1597,7 @@ template {
     font-size: 20px;
     line-height: 25px;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   .newsletter-title__strong {
     font-style: normal;
@@ -1605,6 +1624,7 @@ template {
   }
   .reviews-slider__profile {
     margin-top: -48px;
+    margin-bottom: 16px;
   }
   .reviews-slider__username {
     margin-top: 9px;

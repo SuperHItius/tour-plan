@@ -64,7 +64,9 @@
             flex-direction: column
             align-items: center
             margin-top: -45px
-            margin-bottom: 30px
+            margin-bottom: 15px
+            &__star
+                margin-right: 10px
         &__avatar
             width: 90px
             height: 90px
@@ -86,9 +88,11 @@
         &__rating
             display: flex
             align-items: center
+            justify-content: space-between
+           
         &__block-text
             overflow: auto
-            height: 150px
+            height: 112px
         &__block-text::-webkit-scrollbar
             display: none
             &__text
@@ -99,3 +103,4 @@
                 line-height: 160%
                 text-align: justify
                 margin: auto
+                text-align: center
