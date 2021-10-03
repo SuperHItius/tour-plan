@@ -13,7 +13,12 @@
     .card
         width: 230px
         padding-right: 4px
-
+    .footer
+        &__input
+            flex-basis: 100%
+        &__social
+            &-network
+                margin-top: -25px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -48,7 +53,6 @@
             flex-direction: row
         &-slider
             width: 100%
-    
     .booking
         margin-top: 0
         width: 340px
@@ -57,10 +61,8 @@
             line-height: 28px
         &__call-center
             margin-bottom: 19px
-    
     .map
         width: 340px
-    
     .reviews
         padding-top: 17px
         &__title
@@ -94,6 +96,7 @@
             height: 8px
     .activities
         padding-top: 19px
+        padding-bottom: 49px
         &-wrapper
             flex-wrap: wrap
         &__card
@@ -104,6 +107,53 @@
         margin-bottom: 20px
         &__title
             width: 200px
+    .footer
+        padding-top: 56px
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+            margin-bottom: 64px
+        &__input
+            flex-basis: 47%
+        &__logo
+            width: 104px
+            grid-row: 1/2
+            grid-column: span 2
+            margin-bottom: 12px
+        &__social
+            &-network
+                grid-row: 1/2
+                grid-column: span 10
+                align-self: center
+                margin-top: 28px
+        &__categories
+            grid-row: 2/3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__additional
+            grid-column: span 3
+        &__contact
+            &-details
+                grid-column: span 6
+                grid-row: 3
+            &-form
+                grid-column: span 6
+                grid-row: 4
+        &__title
+            &--mb-3
+                margin-top: 20px
+            &--mb-4
+                margin-bottom: 36px
+        &__text
+            margin-bottom: 24px
+        &__message
+            margin-bottom: 21px
+        &__information
+            margin: 0
+            justify-content: space-between
+        &__menu
+            margin: 0
 
 
 @media (max-width: 767px)
@@ -186,6 +236,13 @@
         padding-bottom: 60px
     .card
         width: 49%
+    .footer
+        &__logo
+            max-width: 104px
+        &__input
+            flex-basis: 100%
+        &__menu
+            margin: 0
 
 
 @media (max-width: 576px)
@@ -227,6 +284,34 @@
         &-slider
             &__text
                 text-align: left
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        
+
 
 @media (max-width: 360px)
     .container
@@ -323,6 +408,7 @@
                     margin-right: -87px
     .activities
         padding-top: 0
+        padding-bottom: 27px
         &__title
             margin-top: 17px
             font-style: normal
@@ -341,7 +427,49 @@
             margin-bottom: 28px
         &--4
             padding: 27px 9px 25px 26px
-
-
+    .footer
+        &-wrapper
+            margin-bottom: 36px
+        &__title
+            &--inline
+                margin-top: 13px
+                margin-bottom: 23px
+        &__social
+            &-network
+                margin-top: -10px
+                flex-direction: column
+                margin-bottom: -12px
+            &-links
+                justify-content: flex-start
+        &__categories
+            grid-row: 5
+            margin-bottom: -20px
+        &__legal
+            grid-row: 3
+            margin-left: 0
+            margin-bottom: -12px
+        &__additional
+            grid-row: 4
+            margin-bottom: -11px
+        &__contact
+            &-details
+                max-width: 280px
+            &-form
+                max-width: 280px
+        &__icon
+            &-wrapper
+                min-width: 31px
+        &__title
+            &--mb-4
+                margin-bottom: 20px
+        &__message
+            margin-bottom: 43px
+        &__information
+            flex-direction: column
+            align-items: flex-start
+        &__menu
+            margin-bottom: 10px
+            &-link
+                margin-right: 3px
 
 
