@@ -1,6 +1,6 @@
 .navbar
     background-color: #ffffff
-    &-top 
+    &-top
         display: flex
         align-items: center
         justify-content: space-between
@@ -32,6 +32,10 @@
             font-size: 14px
             line-height: 18px
             font-weight: bold
+        &__item
+            &--mobile
+                &_visible
+                    display: none
 
 .logo
     width: 177px
@@ -51,19 +55,19 @@
         background-color: #f5fafe
         border: none
         font-size: 12px
-        line-height: 15px 
+        line-height: 15px
         color: $text-color
         outline: none
 
     &__button
-        position: absolute 
+        position: absolute
         top: 0
         right: 0
         height: 100%
-        width: 65px 
+        width: 65px
         border: none
-        background-color: $primary 
-        cursor: pointer   
+        background-color: $primary
+        cursor: pointer
 .user
     display: flex
     align-items: center
@@ -78,3 +82,5 @@
         font-size: 14px
         line-height: 18px
         color: $text-color
+
+
