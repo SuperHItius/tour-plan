@@ -1126,6 +1126,7 @@ template {
   line-height: 15px;
   background-color: #EC1F46;
   color: #fff;
+  cursor: pointer;
 }
 
 .activities {
@@ -1339,6 +1340,15 @@ template {
   list-style: none;
 }
 
+.footer__ul--item-mail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
 .footer__title {
   font-style: normal;
   font-weight: bold;
@@ -1382,14 +1392,6 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
-}
-
-.footer__item--mail {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-  color: #BDBDBD;
 }
 
 .footer__icon-wrapper {
@@ -1975,15 +1977,18 @@ template {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    max-width: 280px;
     margin-bottom: 40px;
+    width: 100%;
   }
   .footer__contact-form {
-    max-width: 280px;
     -ms-grid-row: 7;
     grid-row: 7;
     grid-column: 0;
     margin-top: -53px;
+    width: 100%;
+  }
+  .footer__form {
+    width: 100%;
   }
   .footer__information {
     -webkit-box-orient: vertical;
