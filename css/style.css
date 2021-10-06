@@ -1662,7 +1662,6 @@ template {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
-    margin-bottom: 64px;
   }
   .footer__input {
     -ms-flex-preferred-size: 47%;
@@ -1757,6 +1756,11 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar__search--mobile_visible {
+    width: 80%;
+    margin: auto;
+    right: 0;
+  }
   .navbar__user {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1820,6 +1824,10 @@ template {
     color: #fff;
     margin-left: 0;
     margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
@@ -1908,7 +1916,6 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-bottom: 36px;
   }
   .footer__icon-wrapper {
     min-width: 31px;
@@ -1932,7 +1939,7 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: -10px;
+    margin-top: -14px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2087,6 +2094,10 @@ template {
   .reviews-slider__text {
     text-align: left;
   }
+  .footer__contact-form {
+    grid-column: span 2;
+    width: 91%;
+  }
 }
 
 @media (max-width: 360px) {
@@ -2099,7 +2110,7 @@ template {
   }
   .navbar-top {
     padding-top: 23px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
   }
   .hotel {
     padding-top: 0;
