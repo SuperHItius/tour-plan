@@ -2051,6 +2051,12 @@ template {
   }
 }
 
+@media (max-width: 700px) and (max-height: 300px) {
+  .navbar-bottom--visible {
+    overflow: overlay;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     max-width: 479px;
