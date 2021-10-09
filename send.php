@@ -6,8 +6,8 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$email = $_POST['phone'];
-$text = $_POST['message'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
 
 // Формирование самого письма
@@ -25,19 +25,20 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'SuperHitius88@yandex.ru'; // Логин на почте
-    $mail->Password   = '0779043tarapuh'; // Пароль на почте
+    $mail->Password   = 'ngjtaghnqaqzkisb'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('SuperHitius88@yandex.ru', 'SuperHit88'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('SuperHitius88@yandex.ru', 'Гриша
+    Сложнов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('tarakanovmixail@mail.ru');  
+    $mail->addAddress('supertarapuh@gmail.com');  
     
 
     // Отправка сообщения
