@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    
 new Swiper('.hotel-slider', {
     loop: true,
     navigation: {
@@ -8,19 +7,13 @@ new Swiper('.hotel-slider', {
     },
     speed: 1100,
     effect: 'coverflow',
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+        },
 });
 
-const swiper = document.querySelector('.hotel-slider').swiper;
 
-addEventListener("keydown", function(event) {
-    if (event.code === 'ArrowRight') {
-        swiper.slideNext();
-    }
-
-    if (event.code === 'ArrowLeft') {
-        swiper.slidePrev();
-    }
-});
 
 new Swiper('.reviews-slider', {
     loop: true,
@@ -54,4 +47,26 @@ function closeModal(event) {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
 }
+
+
+$(".form").each(function(){
+    $(this).validate({
+        errorClass: "invalid",
+        messages: {
+            name: {
+                required: "Please specify your name",
+                minlength: "The name must be at least 2 letters long",
+            },
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com",
+            },
+            phone: {
+                required:"Phone is required",
+            },
+        },
+    });
+})
+$('input[type="tel"').mask('(000) 000-0000');
+AOS.init();
 });

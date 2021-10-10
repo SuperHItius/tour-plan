@@ -9,7 +9,7 @@
         z-index: 100
         visibility: hidden
         opacity: 0
-        transition: opascity 0.2s 
+        transition: opascity 0.2s
         &--visible
             visibility: visible
             opacity: 1
@@ -27,6 +27,8 @@
         visibility: hidden
         opacity: 0
         transition: opascity 0.2s
+        max-height: 100%
+        overflow: auto
         &--visible
             visibility: visible
             opacity: 1
@@ -37,15 +39,26 @@
         text-decoration: none
     &__input
         width: 100%
-        margin-bottom: 15px
+        margin-top: 15px
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__message
         width: 100%
-        min-height: 132px
-        margin-bottom: 15px
+        max-height: 123px
+        margin-top: 15px
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__buttons
         display: flex
         justify-content: space-between
         align-items: center
+        margin-top: 15px
     &__info
         font-style: normal
         font-weight: bold
@@ -58,6 +71,6 @@
         font-size: 18px
         line-height: 23px
         text-transform: uppercase
+        margin-top: 0
         margin-bottom: 15px
         text-align: center
-

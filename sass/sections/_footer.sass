@@ -37,6 +37,7 @@
         &-form
             grid-column: span 2
             margin: -8px 2px
+            align-items: center
     &__form
         display: flex
         align-items: center
@@ -98,13 +99,15 @@
         text-decoration: none
         color: inherit
     &__input
-        margin-bottom: 15px
-        flex-basis: 47%
-        font-style: normal
-        font-weight: normal
-        font-size: 12px
-        line-height: 15px
-        color: $footer-text-color
+        width: 100%
+        &-group
+            margin-bottom: 15px
+            flex-basis: 47%
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $footer-text-color
     &__message
         flex-basis: 100%
         margin-bottom: 21px
@@ -116,6 +119,9 @@
         line-height: 15px
     &__buttons
         width: 538px
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__info
         font-style: normal
         font-weight: bold

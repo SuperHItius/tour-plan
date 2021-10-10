@@ -21,7 +21,7 @@
     <header class="navbar navbar--mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="image/horizontal-logo.svg" alt="Logo: Dest Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -86,23 +86,25 @@
     </nav>
     <section class="hotel">
         <div class="container">
-            <div class="hotel-info">
+            <div class="hotel-info--thank">
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
-                        <h1 class="hotel-name hotel-info__name">The message has been sent!</h1>
+                        <h1 class="hotel-name hotel-info__name">The message has&nbsp;been&nbsp;sent!</h1>
                     </div>
                     <p class="hotel-description hotel-info__description">
                         Our manager will call you within 15 minutes.
                     </p>
                 </div>
-                <a href="index.html" class="button">Go back to the main page</a>
+                <a href="index.html" class="button button__thy">Go back to the main page</a>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="image/vertical-logo.svg" alt="vertical-logo" class="logo footer__logo">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="image/vertical-logo.svg" alt="vertical-logo" class="logo footer__logo">
+                </a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -240,27 +242,31 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
+                    <form action="send.php" method="POST" class="footer__form form">
                         <input 
                             type="text" 
                             class="input footer__input" 
                             placeholder="Your Full Name*"
                             name="name"
+                            required
+                            minlength="2"
                             >
                         <input 
-                            type="text" 
+                            type="tel" 
                             class="input footer__input" 
                             placeholder="Phone Number*"
                             name="phone"
+                            required
+                            minlength="9"
                         >
                         <textarea 
-                            class="footer__message" 
+                            class="message footer__message" 
                             cols="30" 
                             rows="10" 
                             placeholder="Message"
                             name="message"
                         ></textarea>
-                        <div class="footer__buttons">
+                        <div class="form footer__buttons">
                             <div class="footer__button-send">
                                 <button class="button footer__button" type="submit">Send
                                 </button>
@@ -287,10 +293,11 @@
         <!-- /.container -->
     </footer>
     <!-- ./footer -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script>
 </body>
 
 </html>
