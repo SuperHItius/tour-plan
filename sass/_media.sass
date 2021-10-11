@@ -19,6 +19,21 @@
         &__social
             &-network
                 margin-top: -25px
+
+@media (min-width: 992px)
+    .button, .search__button, .subscribe__button, .card__button, 
+        transition: all 0.5s
+        &:hover
+            background-color: #EC1F75
+    a
+        &:hover
+            text-decoration: underline
+    .footer__social-links
+        .footer__link
+            &:hover
+                img
+                    transform: scale(1.5)
+
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -120,7 +135,7 @@
             width: 104px
             grid-row: 1/2
             grid-column: span 2
-            padding: 18px 9px 0px 0px
+            padding: 9px 4px 0px 0px
         &__social
             &-network
                 grid-row: 1/2
@@ -259,7 +274,8 @@
             &__offer
                 order: -1
                 margin-left: 0
-            &--thank
+        &-page
+            &__thank
                 display: flex
                 flex-direction: column
                 align-items: start
@@ -396,16 +412,12 @@
             width: 96%
             padding: 33px
 
-
-
 @media (max-width: 576px)
     .container
         max-width: 479px
         width: 92%
-
     .slider
         height: 250px
-
     .hotel
         &-right
             height: 100%
@@ -435,6 +447,7 @@
             &__text
                 text-align: left
     .footer
+        padding-top: 30px
         &__contact
             &-form
                 grid-column: span 2
@@ -442,8 +455,10 @@
         &__contact
             &-details
                 width: 100%
-            &-form
-                width: 100%
+    .modal
+        &__dialog
+            width: 96%
+            padding: 14px 19px 9px 19px
 
 @media (max-width: 360px)
     .container
@@ -458,7 +473,7 @@
     .navbar
         &-top
             padding-top: 23px
-            padding-bottom: 32px
+            padding-bottom: 20px
     .hotel
         padding-top: 7px
         padding-bottom: 40px

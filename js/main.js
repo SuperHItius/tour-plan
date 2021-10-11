@@ -63,10 +63,11 @@ $(".form").each(function(){
             },
             phone: {
                 required:"Phone is required",
+                minlength: "The phone number cannot be less than 9 characters",
             },
         },
     });
 })
-$('input[type="tel"').mask('(000) 000-0000');
+$('input[type="tel"').mask('+7(000) 00-00-000');
 AOS.init();
 });

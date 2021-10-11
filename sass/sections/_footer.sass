@@ -12,7 +12,7 @@
         margin-bottom: 102px
     &__logo
         width: 166px
-        padding: 27px 13px 0px 0px
+        padding: 15px 7px 0px 0px
         grid-row: 1/3
     &__catagoties
         grid-row: 1/3
@@ -40,7 +40,7 @@
             align-items: center
     &__form
         display: flex
-        align-items: center
+        align-items: start
         justify-content: space-between
         flex-wrap: wrap
     &__ul
@@ -98,6 +98,8 @@
     &__link
         text-decoration: none
         color: inherit
+        img
+            transition: all 0.5s
     &__input
         width: 100%
         &-group
@@ -144,3 +146,14 @@
         font-weight: normal
         font-size: 12px
         line-height: 15px
+
+    &__text
+        &-block
+            a
+                text-decoration: none
+                margin-right: 10px
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: $footer-text-color
